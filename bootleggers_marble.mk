@@ -22,13 +22,13 @@ $(call soong_config_set,wpa_supplicant_8,board_wpa_supplicant_private_lib,//hard
 $(call soong_config_set,wpa_supplicant_8,board_hostapd_private_lib,//hardware/qcom-caf/wlan/qcwcn/wpa_supplicant_8_lib:lib_driver_cmd_qcwcn)
 
 # Dummy kernel vars for vendor/lineage soong generators (marble builds kernel via make tasks)
-KERNEL_BUILD_OUT_PREFIX ?=
-TARGET_KERNEL_PLATFORM_TARGET ?=
+KERNEL_BUILD_OUT_PREFIX :=
+TARGET_KERNEL_PLATFORM_TARGET :=
 
 # qcwcn driver_cmd lib: fully-qualified (unprefixed is invisible to external/wpa_supplicant_8)
 $(call soong_config_set,wpa_supplicant_8,board_wpa_supplicant_private_lib,//hardware/qcom-caf/wlan/qcwcn/wpa_supplicant_8_lib:lib_driver_cmd_qcwcn)
 $(call soong_config_set,wpa_supplicant_8,board_hostapd_private_lib,//hardware/qcom-caf/wlan/qcwcn/wpa_supplicant_8_lib:lib_driver_cmd_qcwcn)
 
 # Dummy kernel vars for vendor/lineage soong generators (marble builds kernel via make tasks)
-KERNEL_BUILD_OUT_PREFIX ?=
-TARGET_KERNEL_PLATFORM_TARGET ?=
+KERNEL_BUILD_OUT_PREFIX :=
+TARGET_KERNEL_PLATFORM_TARGET :=
